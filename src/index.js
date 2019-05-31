@@ -65,7 +65,7 @@ const AppNavigator = createStackNavigator({
   }
 
 },{
-  initialRouteName: 'Tab',
+  initialRouteName: 'Login',
 });
 
 

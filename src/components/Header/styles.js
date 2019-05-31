@@ -5,11 +5,11 @@ const styles = StyleSheet.create({
     container: {
       backgroundColor: '#C0392B',
       width:  "100%",
-      padding: 5,
-      borderBottomWidth: 1,
+      padding: 10,
+      borderBottomWidth: 2,
       borderBottomColor: "rgba(0,0,0,0.2)" ,
       flexDirection: "row",
-      alignItems: "space-beteen"
+      justifyContent: "space-between"
     },
     
   });
