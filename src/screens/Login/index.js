@@ -10,6 +10,7 @@ export default class Login extends Component {
   state= {
     text: ""
   }
+  
   render() {
     return (
       <View style={styles.container}>
