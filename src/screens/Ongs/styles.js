@@ -8,8 +8,17 @@ const styles = StyleSheet.create({
     },
     txtTitulo:{
     	color: "#ffff"
+    },
+    btn:{
+      width: '100%',
+      alignItems: "center",
+      backgroundColor: "#C0392B",
+      padding: 10,
+      borderRadius: 3
+    },
+    txtBnt:{
+      color: "#ffff"
     }
-    
   });
 
 export default styles;

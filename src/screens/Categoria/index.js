@@ -3,18 +3,8 @@ import { View, Text } from 'react-native';
 import styles from './styles';
 import Header from '../../components/Header';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import { ListItem } from 'react-native-elements';
+import { List } from 'react-native-paper';
 
-	const list = [
-	  {
-	    title: 'Gato',
-	    icon: 'av-timer'
-	  },
-	  {
-	    title: 'Cachorro',
-	    icon: 'flight-takeoff'
-	  },
-	];
 
 export default class Categoria extends Component {
 
@@ -27,15 +17,18 @@ export default class Categoria extends Component {
      	  right={<Icon name='search' size={24} color='#FFFF' />}
      	 />
 
-     	 {
-		    list.map((item, i) => (
-		      <ListItem
-		        key={i}
-		        title={item.title}
-		        leftIcon={{ name: item.icon }}
-		      />
-		    ))
-		  }
+			<List.Section>
+        <List.Subheader>Categorias de animais</List.Subheader>
+        <List.Item
+          title="Gato"
+          left={() => <List.Icon icon="pets" />}
+       />
+        <List.Item
+          title="Cachorro"
+          left={() => <List.Icon icon="pets" />}
+       />
+      </List.Section>
+
       </View>
 
     );

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import Header from '../../components/Header';
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -21,11 +21,9 @@ export default class Ongs extends Component {
           <Text style={{marginBottom: 10}}>
             Salvar os animais é nosso dever.
           </Text>
-          <Button
-            icon={<Icon name='institution' color='#ffffff' />}
-            backgroundColor='#C0392B'
-            buttonStyle={{borderRadius: 0, marginLeft: 0, marginRight: 0, marginBottom: 0}}
-            title=' VER MAIS' />
+          <TouchableOpacity activeOpacity={0.7} style={styles.btn}>
+            <Text style={styles.txtBnt}>VER MAIS</Text>
+          </TouchableOpacity>
         </Card>
       </View>
 
